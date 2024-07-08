@@ -1,17 +1,14 @@
-//以下排除内容都为半匹配，即包含以下任意内容都会被过滤掉
-
-//需要排除的域名
 String[] domainExclude = {
-    //浏览器 
 	"firefoxchina", "mozilla",
-    //bytecode
 	"ibytedapm.com", "byteimg.com", "bytegoofy.com", "googleapis", 
 	"feelgood.cn", "bytescm.com", "bytetos.com", "yhgfb-cn-static.com", 
-	"bydauto", "ecombdstatic", "feishucdn", "snssdk", "zijieapi"
+	"bydauto", "ecombdstatic", "feishucdn", "snssdk", "zijieapi",
+    	"map.qq.com","map.gtimg.com","restapi.amap.com"
+    
 };
 
 //需要排除的请求路径或文件后缀
-String[] pathExclude = {"WebSocket", ".js", ".css", ".png"};
+String[] pathExclude = {"WebSocket", ".js", ".css", ".png", ".woff", "woff2"};
 
 //需要排除的HTTP方法
 String[] methodExclude = {"OPTIONS", "HEAD"};
